@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+    nodeserver:
+        image: "rdiflorio93/ontodia-docker"
+        ports:
+            - "10444:10444"
+    nginx:
+        restart: always
+        build:
+            context: ./nginx
+        ports:
+            - "8080:80"
