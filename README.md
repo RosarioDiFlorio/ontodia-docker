@@ -16,4 +16,4 @@ go to localhost:3030
 add data and select the ontology you want to upload.
 
 ## Step 3 - launch docker compose
-
+docker-compose up --build
